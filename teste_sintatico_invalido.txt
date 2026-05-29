@@ -1,0 +1,11 @@
+(START)
+*{ Teste: estruturas de controle mal formadas }*
+(10 X)
+(20 Y)
+(ENDIF)
+(ELSE)
+((X) (Y) > WHILE)
+(((X) 1 -) X)
+(ENDWHILE)
+(((X) (Y) +) SOMA)
+(END)

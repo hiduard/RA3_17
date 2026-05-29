@@ -1,0 +1,10 @@
+(START)
+*{ Teste: comentario nao fechado dispara erro lexico }*
+(10 X)
+(5 Y)
+(((X) (Y) +) SOMA)
+*{ este comentario nao foi fechado corretamente
+(20 Z)
+(((SOMA) (Z) *) PROD)
+(PROD)
+(END)

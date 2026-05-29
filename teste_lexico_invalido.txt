@@ -1,0 +1,11 @@
+(START)
+*{ Teste: varios tokens invalidos no programa }*
+(10 X)
+(20 Y)
+(X@ Y)
+(3.14.5 PI)
+(A & B)
+(10 # 5)
+(((X) (Y) +) Z)
+(Z)
+(END)

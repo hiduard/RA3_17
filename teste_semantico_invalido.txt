@@ -1,0 +1,35 @@
+(START)
+*{ Teste semantico invalido: erros de tipo intencionais }*
+(10 X)
+(3.14 PI)
+*{ erro 1: divisao inteira com real }*
+((X) (PI) /)
+*{ erro 2: resto com real }*
+((X) 3.5 %)
+*{ erro 3: variavel nao declarada }*
+(NAODECLARADA)
+*{ erro 4: potenciacao com expoente real }*
+((X) (PI) ^)
+*{ erro 5: bool como operando de operacao aritmetica }*
+(((X) (PI) >) (X) +)
+*{ erro 6: variavel redefinida com tipo incompativel (bool sobre int) }*
+(((X) (PI) >) X)
+*{ programa continua para mostrar todos os erros }*
+(((X) 2 +) Y)
+((X) (Y) > IF)
+(1 OK)
+(ELSE)
+(0 OK)
+(ENDIF)
+(Y)
+*{ erro 7: literal bool em operacao aritmetica }*
+(TRUE (X) +)
+*{ erro 8: condicao de IF com tipo int em vez de bool }*
+((X) IF)
+(1 ERROIF)
+(ENDIF)
+*{ erro 9: condicao de WHILE com tipo int em vez de bool }*
+((X) WHILE)
+(((X) 1 -) X)
+(ENDWHILE)
+(END)

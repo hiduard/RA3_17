@@ -1,0 +1,175 @@
+# Arvore Sintatica Atribuida
+
+Gerada pelo Analisador Semantico — Fase 3.
+Cada no de expressao exibe seu tipo inferido entre colchetes `[tipo]`.
+
+```
+programa [1..63]
+  expressao [linha 3]
+    gravar_memoria(X)  [int]
+      numero(10)  [int]
+  expressao [linha 4]
+    gravar_memoria(Y)  [int]
+      numero(3)  [int]
+  expressao [linha 5]
+    gravar_memoria(Z)  [real]
+      numero(2.5)  [real]
+  expressao [linha 7]
+    gravar_memoria(SOMA)  [int]
+      binaria(+)  [int]
+        memoria(X)  [int]
+        memoria(Y)  [int]
+  expressao [linha 8]
+    gravar_memoria(DIF)  [int]
+      binaria(-)  [int]
+        memoria(X)  [int]
+        memoria(Y)  [int]
+  expressao [linha 9]
+    gravar_memoria(PROD)  [int]
+      binaria(*)  [int]
+        memoria(X)  [int]
+        memoria(Y)  [int]
+  expressao [linha 10]
+    gravar_memoria(DIVINT)  [int]
+      binaria(/)  [int]
+        memoria(X)  [int]
+        memoria(Y)  [int]
+  expressao [linha 11]
+    gravar_memoria(RESTO)  [int]
+      binaria(%)  [int]
+        memoria(X)  [int]
+        memoria(Y)  [int]
+  expressao [linha 13]
+    gravar_memoria(ZSOMA)  [real]
+      binaria(+)  [real]
+        memoria(Z)  [real]
+        numero(1.0)  [real]
+  expressao [linha 14]
+    gravar_memoria(ZDIV)  [real]
+      binaria(|)  [real]
+        memoria(Z)  [real]
+        numero(2.0)  [real]
+  expressao [linha 16]
+    gravar_memoria(POT)  [int]
+      binaria(^)  [int]
+        memoria(X)  [int]
+        memoria(Y)  [int]
+  expressao [linha 18]
+    gravar_memoria(MIX)  [real]
+      binaria(+)  [real]
+        memoria(X)  [int]
+        memoria(Z)  [real]
+  if [linha 20]
+    condicao:
+      relacional(>)  [bool]
+        memoria(X)  [int]
+        memoria(Y)  [int]
+    then:
+      expressao [linha 21]
+        gravar_memoria(RGT)  [int]
+          numero(1)  [int]
+    else:
+      expressao [linha 23]
+        gravar_memoria(RGT)  [int]
+          numero(0)  [int]
+  if [linha 25]
+    condicao:
+      relacional(<)  [bool]
+        memoria(X)  [int]
+        memoria(Y)  [int]
+    then:
+      expressao [linha 26]
+        gravar_memoria(RLT)  [int]
+          numero(1)  [int]
+    else:
+      expressao [linha 28]
+        gravar_memoria(RLT)  [int]
+          numero(0)  [int]
+  if [linha 30]
+    condicao:
+      relacional(>=)  [bool]
+        memoria(X)  [int]
+        memoria(Y)  [int]
+    then:
+      expressao [linha 31]
+        gravar_memoria(RGE)  [int]
+          numero(1)  [int]
+    else:
+      expressao [linha 33]
+        gravar_memoria(RGE)  [int]
+          numero(0)  [int]
+  if [linha 35]
+    condicao:
+      relacional(<=)  [bool]
+        memoria(X)  [int]
+        memoria(Y)  [int]
+    then:
+      expressao [linha 36]
+        gravar_memoria(RLE)  [int]
+          numero(1)  [int]
+    else:
+      expressao [linha 38]
+        gravar_memoria(RLE)  [int]
+          numero(0)  [int]
+  if [linha 40]
+    condicao:
+      relacional(==)  [bool]
+        memoria(X)  [int]
+        memoria(Y)  [int]
+    then:
+      expressao [linha 41]
+        gravar_memoria(REQ)  [int]
+          numero(1)  [int]
+    else:
+      expressao [linha 43]
+        gravar_memoria(REQ)  [int]
+          numero(0)  [int]
+  if [linha 45]
+    condicao:
+      relacional(!=)  [bool]
+        memoria(X)  [int]
+        memoria(Y)  [int]
+    then:
+      expressao [linha 46]
+        gravar_memoria(RNE)  [int]
+          numero(1)  [int]
+    else:
+      expressao [linha 48]
+        gravar_memoria(RNE)  [int]
+          numero(0)  [int]
+  while [linha 51]
+    condicao:
+      relacional(>)  [bool]
+        memoria(Y)  [int]
+        numero(0)  [int]
+    bloco:
+      expressao [linha 52]
+        gravar_memoria(Y)  [int]
+          binaria(-)  [int]
+            memoria(Y)  [int]
+            numero(1)  [int]
+  expressao [linha 55]
+    res(1)  [int]
+  expressao [linha 56]
+    gravar_memoria(ULTIMO)  [int]
+      res(1)  [int]
+  expressao [linha 57]
+    memoria(SOMA)  [int]
+  expressao [linha 59]
+    gravar_memoria(LIGADO)  [bool]
+      bool_literal  [bool]
+  expressao [linha 60]
+    gravar_memoria(DESLIGADO)  [bool]
+      bool_literal  [bool]
+  expressao [linha 61]
+    memoria(LIGADO)  [bool]
+  expressao [linha 62]
+    memoria(DESLIGADO)  [bool]
+```
+
+## Legenda
+
+- `[int]`  — expressao de tipo inteiro
+- `[real]` — expressao de tipo real (ponto flutuante)
+- `[bool]` — expressao de tipo logico (resultado de operacao relacional)
+- `[desconhecido]` — tipo nao pode ser inferido estaticamente

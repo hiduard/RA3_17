@@ -1,0 +1,327 @@
+ACEITO: True
+
+DERIVACOES:
+{"nao_terminal": "programa", "lookahead": "LPAREN_CMD", "regra": ["abre_start", "lista_prog", "fecha_end"]}
+{"nao_terminal": "abre_start", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "START", "RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub_sub", "lookahead": "OPERATOR", "regra": ["OPERATOR", "RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub_sub", "lookahead": "OPERATOR", "regra": ["OPERATOR", "RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub_sub", "lookahead": "OPERATOR", "regra": ["OPERATOR", "RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub_sub", "lookahead": "OPERATOR", "regra": ["OPERATOR", "RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub_sub", "lookahead": "OPERATOR", "regra": ["OPERATOR", "RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub_sub", "lookahead": "NUMBER", "regra": ["NUMBER", "resto_num_sub"]}
+{"nao_terminal": "resto_num_sub", "lookahead": "OPERATOR", "regra": ["OPERATOR", "RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub_sub", "lookahead": "NUMBER", "regra": ["NUMBER", "resto_num_sub"]}
+{"nao_terminal": "resto_num_sub", "lookahead": "OPERATOR", "regra": ["OPERATOR", "RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub_sub", "lookahead": "OPERATOR", "regra": ["OPERATOR", "RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub_sub", "lookahead": "OPERATOR", "regra": ["OPERATOR", "RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub", "lookahead": "REL_OP", "regra": ["REL_OP", "cauda_rel"]}
+{"nao_terminal": "cauda_rel", "lookahead": "IF", "regra": ["IF", "RPAREN", "lista_if", "fim_if"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_if"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_ELSE", "regra": ["epsilon"]}
+{"nao_terminal": "fim_if", "lookahead": "LPAREN_ELSE", "regra": ["abre_else", "lista_if", "abre_endif"]}
+{"nao_terminal": "abre_else", "lookahead": "LPAREN_ELSE", "regra": ["LPAREN_ELSE", "ELSE", "RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_if"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_ENDIF", "regra": ["epsilon"]}
+{"nao_terminal": "abre_endif", "lookahead": "LPAREN_ENDIF", "regra": ["LPAREN_ENDIF", "ENDIF", "RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub", "lookahead": "REL_OP", "regra": ["REL_OP", "cauda_rel"]}
+{"nao_terminal": "cauda_rel", "lookahead": "IF", "regra": ["IF", "RPAREN", "lista_if", "fim_if"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_if"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_ELSE", "regra": ["epsilon"]}
+{"nao_terminal": "fim_if", "lookahead": "LPAREN_ELSE", "regra": ["abre_else", "lista_if", "abre_endif"]}
+{"nao_terminal": "abre_else", "lookahead": "LPAREN_ELSE", "regra": ["LPAREN_ELSE", "ELSE", "RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_if"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_ENDIF", "regra": ["epsilon"]}
+{"nao_terminal": "abre_endif", "lookahead": "LPAREN_ENDIF", "regra": ["LPAREN_ENDIF", "ENDIF", "RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub", "lookahead": "REL_OP", "regra": ["REL_OP", "cauda_rel"]}
+{"nao_terminal": "cauda_rel", "lookahead": "IF", "regra": ["IF", "RPAREN", "lista_if", "fim_if"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_if"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_ELSE", "regra": ["epsilon"]}
+{"nao_terminal": "fim_if", "lookahead": "LPAREN_ELSE", "regra": ["abre_else", "lista_if", "abre_endif"]}
+{"nao_terminal": "abre_else", "lookahead": "LPAREN_ELSE", "regra": ["LPAREN_ELSE", "ELSE", "RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_if"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_ENDIF", "regra": ["epsilon"]}
+{"nao_terminal": "abre_endif", "lookahead": "LPAREN_ENDIF", "regra": ["LPAREN_ENDIF", "ENDIF", "RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub", "lookahead": "REL_OP", "regra": ["REL_OP", "cauda_rel"]}
+{"nao_terminal": "cauda_rel", "lookahead": "IF", "regra": ["IF", "RPAREN", "lista_if", "fim_if"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_if"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_ELSE", "regra": ["epsilon"]}
+{"nao_terminal": "fim_if", "lookahead": "LPAREN_ELSE", "regra": ["abre_else", "lista_if", "abre_endif"]}
+{"nao_terminal": "abre_else", "lookahead": "LPAREN_ELSE", "regra": ["LPAREN_ELSE", "ELSE", "RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_if"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_ENDIF", "regra": ["epsilon"]}
+{"nao_terminal": "abre_endif", "lookahead": "LPAREN_ENDIF", "regra": ["LPAREN_ENDIF", "ENDIF", "RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub", "lookahead": "REL_OP", "regra": ["REL_OP", "cauda_rel"]}
+{"nao_terminal": "cauda_rel", "lookahead": "IF", "regra": ["IF", "RPAREN", "lista_if", "fim_if"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_if"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_ELSE", "regra": ["epsilon"]}
+{"nao_terminal": "fim_if", "lookahead": "LPAREN_ELSE", "regra": ["abre_else", "lista_if", "abre_endif"]}
+{"nao_terminal": "abre_else", "lookahead": "LPAREN_ELSE", "regra": ["LPAREN_ELSE", "ELSE", "RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_if"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_ENDIF", "regra": ["epsilon"]}
+{"nao_terminal": "abre_endif", "lookahead": "LPAREN_ENDIF", "regra": ["LPAREN_ENDIF", "ENDIF", "RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "resto_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "resto_sub", "lookahead": "REL_OP", "regra": ["REL_OP", "cauda_rel"]}
+{"nao_terminal": "cauda_rel", "lookahead": "IF", "regra": ["IF", "RPAREN", "lista_if", "fim_if"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_if"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_ELSE", "regra": ["epsilon"]}
+{"nao_terminal": "fim_if", "lookahead": "LPAREN_ELSE", "regra": ["abre_else", "lista_if", "abre_endif"]}
+{"nao_terminal": "abre_else", "lookahead": "LPAREN_ELSE", "regra": ["LPAREN_ELSE", "ELSE", "RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_if"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_if", "lookahead": "LPAREN_ENDIF", "regra": ["epsilon"]}
+{"nao_terminal": "abre_endif", "lookahead": "LPAREN_ENDIF", "regra": ["LPAREN_ENDIF", "ENDIF", "RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "NUMBER", "regra": ["NUMBER", "resto_num"]}
+{"nao_terminal": "resto_num", "lookahead": "REL_OP", "regra": ["REL_OP", "cauda_rel"]}
+{"nao_terminal": "cauda_rel", "lookahead": "WHILE", "regra": ["WHILE", "RPAREN", "lista_while", "abre_endwhile"]}
+{"nao_terminal": "lista_while", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_while"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub_sub"]}
+{"nao_terminal": "sub", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem_sub"]}
+{"nao_terminal": "apos_mem_sub", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "apos_sub_sub", "lookahead": "NUMBER", "regra": ["NUMBER", "resto_num_sub"]}
+{"nao_terminal": "resto_num_sub", "lookahead": "OPERATOR", "regra": ["OPERATOR", "RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_while", "lookahead": "LPAREN_ENDWHILE", "regra": ["epsilon"]}
+{"nao_terminal": "abre_endwhile", "lookahead": "LPAREN_ENDWHILE", "regra": ["LPAREN_ENDWHILE", "ENDWHILE", "RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num"]}
+{"nao_terminal": "apos_num", "lookahead": "RES", "regra": ["RES", "RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "sub", "apos_sub"]}
+{"nao_terminal": "sub", "lookahead": "NUMBER", "regra": ["NUMBER", "apos_num_sub"]}
+{"nao_terminal": "apos_num_sub", "lookahead": "RES", "regra": ["RES", "RPAREN"]}
+{"nao_terminal": "apos_sub", "lookahead": "MEMORY", "regra": ["MEMORY", "resto_mem_grava"]}
+{"nao_terminal": "resto_mem_grava", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem"]}
+{"nao_terminal": "apos_mem", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "BOOL_LIT", "regra": ["BOOL_LIT", "apos_bool"]}
+{"nao_terminal": "apos_bool", "lookahead": "MEMORY", "regra": ["MEMORY", "RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "BOOL_LIT", "regra": ["BOOL_LIT", "apos_bool"]}
+{"nao_terminal": "apos_bool", "lookahead": "MEMORY", "regra": ["MEMORY", "RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem"]}
+{"nao_terminal": "apos_mem", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_CMD", "regra": ["comando", "lista_prog"]}
+{"nao_terminal": "comando", "lookahead": "LPAREN_CMD", "regra": ["LPAREN_CMD", "interior"]}
+{"nao_terminal": "interior", "lookahead": "MEMORY", "regra": ["MEMORY", "apos_mem"]}
+{"nao_terminal": "apos_mem", "lookahead": "RPAREN", "regra": ["RPAREN"]}
+{"nao_terminal": "lista_prog", "lookahead": "LPAREN_END", "regra": ["epsilon"]}
+{"nao_terminal": "fecha_end", "lookahead": "LPAREN_END", "regra": ["LPAREN_END", "END", "RPAREN"]}

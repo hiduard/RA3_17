@@ -1,0 +1,632 @@
+{
+  "tipo": "programa",
+  "linha_inicio": 1,
+  "linha_fim": 63,
+  "comandos": [
+    {
+      "tipo": "expressao",
+      "linha": 3,
+      "fonte": "(10 X)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "X",
+        "valor": {
+          "tipo": "numero",
+          "valor": "10"
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 4,
+      "fonte": "(3 Y)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "Y",
+        "valor": {
+          "tipo": "numero",
+          "valor": "3"
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 5,
+      "fonte": "(2.5 Z)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "Z",
+        "valor": {
+          "tipo": "numero",
+          "valor": "2.5"
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 7,
+      "fonte": "(((X) (Y) +) SOMA)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "SOMA",
+        "valor": {
+          "tipo": "binaria",
+          "operador": "+",
+          "esquerda": {
+            "tipo": "carregar_memoria",
+            "nome": "X"
+          },
+          "direita": {
+            "tipo": "carregar_memoria",
+            "nome": "Y"
+          }
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 8,
+      "fonte": "(((X) (Y) -) DIF)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "DIF",
+        "valor": {
+          "tipo": "binaria",
+          "operador": "-",
+          "esquerda": {
+            "tipo": "carregar_memoria",
+            "nome": "X"
+          },
+          "direita": {
+            "tipo": "carregar_memoria",
+            "nome": "Y"
+          }
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 9,
+      "fonte": "(((X) (Y) *) PROD)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "PROD",
+        "valor": {
+          "tipo": "binaria",
+          "operador": "*",
+          "esquerda": {
+            "tipo": "carregar_memoria",
+            "nome": "X"
+          },
+          "direita": {
+            "tipo": "carregar_memoria",
+            "nome": "Y"
+          }
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 10,
+      "fonte": "(((X) (Y) /) DIVINT)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "DIVINT",
+        "valor": {
+          "tipo": "binaria",
+          "operador": "/",
+          "esquerda": {
+            "tipo": "carregar_memoria",
+            "nome": "X"
+          },
+          "direita": {
+            "tipo": "carregar_memoria",
+            "nome": "Y"
+          }
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 11,
+      "fonte": "(((X) (Y) %) RESTO)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "RESTO",
+        "valor": {
+          "tipo": "binaria",
+          "operador": "%",
+          "esquerda": {
+            "tipo": "carregar_memoria",
+            "nome": "X"
+          },
+          "direita": {
+            "tipo": "carregar_memoria",
+            "nome": "Y"
+          }
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 13,
+      "fonte": "(((Z) 1.0 +) ZSOMA)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "ZSOMA",
+        "valor": {
+          "tipo": "binaria",
+          "operador": "+",
+          "esquerda": {
+            "tipo": "carregar_memoria",
+            "nome": "Z"
+          },
+          "direita": {
+            "tipo": "numero",
+            "valor": "1.0"
+          }
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 14,
+      "fonte": "(((Z) 2.0 |) ZDIV)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "ZDIV",
+        "valor": {
+          "tipo": "binaria",
+          "operador": "|",
+          "esquerda": {
+            "tipo": "carregar_memoria",
+            "nome": "Z"
+          },
+          "direita": {
+            "tipo": "numero",
+            "valor": "2.0"
+          }
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 16,
+      "fonte": "(((X)  (Y) ^) POT)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "POT",
+        "valor": {
+          "tipo": "binaria",
+          "operador": "^",
+          "esquerda": {
+            "tipo": "carregar_memoria",
+            "nome": "X"
+          },
+          "direita": {
+            "tipo": "carregar_memoria",
+            "nome": "Y"
+          }
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 18,
+      "fonte": "(((X) (Z) +) MIX)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "MIX",
+        "valor": {
+          "tipo": "binaria",
+          "operador": "+",
+          "esquerda": {
+            "tipo": "carregar_memoria",
+            "nome": "X"
+          },
+          "direita": {
+            "tipo": "carregar_memoria",
+            "nome": "Z"
+          }
+        }
+      }
+    },
+    {
+      "tipo": "if",
+      "linha": 20,
+      "fonte": "((X) (Y) > IF)",
+      "condicao": {
+        "tipo": "relacional",
+        "operador": ">",
+        "esquerda": {
+          "tipo": "carregar_memoria",
+          "nome": "X"
+        },
+        "direita": {
+          "tipo": "carregar_memoria",
+          "nome": "Y"
+        }
+      },
+      "bloco_then": [
+        {
+          "tipo": "expressao",
+          "linha": 21,
+          "fonte": "(1 RGT)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "RGT",
+            "valor": {
+              "tipo": "numero",
+              "valor": "1"
+            }
+          }
+        }
+      ],
+      "bloco_else": [
+        {
+          "tipo": "expressao",
+          "linha": 23,
+          "fonte": "(0 RGT)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "RGT",
+            "valor": {
+              "tipo": "numero",
+              "valor": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "if",
+      "linha": 25,
+      "fonte": "((X) (Y) < IF)",
+      "condicao": {
+        "tipo": "relacional",
+        "operador": "<",
+        "esquerda": {
+          "tipo": "carregar_memoria",
+          "nome": "X"
+        },
+        "direita": {
+          "tipo": "carregar_memoria",
+          "nome": "Y"
+        }
+      },
+      "bloco_then": [
+        {
+          "tipo": "expressao",
+          "linha": 26,
+          "fonte": "(1 RLT)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "RLT",
+            "valor": {
+              "tipo": "numero",
+              "valor": "1"
+            }
+          }
+        }
+      ],
+      "bloco_else": [
+        {
+          "tipo": "expressao",
+          "linha": 28,
+          "fonte": "(0 RLT)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "RLT",
+            "valor": {
+              "tipo": "numero",
+              "valor": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "if",
+      "linha": 30,
+      "fonte": "((X) (Y) >= IF)",
+      "condicao": {
+        "tipo": "relacional",
+        "operador": ">=",
+        "esquerda": {
+          "tipo": "carregar_memoria",
+          "nome": "X"
+        },
+        "direita": {
+          "tipo": "carregar_memoria",
+          "nome": "Y"
+        }
+      },
+      "bloco_then": [
+        {
+          "tipo": "expressao",
+          "linha": 31,
+          "fonte": "(1 RGE)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "RGE",
+            "valor": {
+              "tipo": "numero",
+              "valor": "1"
+            }
+          }
+        }
+      ],
+      "bloco_else": [
+        {
+          "tipo": "expressao",
+          "linha": 33,
+          "fonte": "(0 RGE)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "RGE",
+            "valor": {
+              "tipo": "numero",
+              "valor": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "if",
+      "linha": 35,
+      "fonte": "((X) (Y) <= IF)",
+      "condicao": {
+        "tipo": "relacional",
+        "operador": "<=",
+        "esquerda": {
+          "tipo": "carregar_memoria",
+          "nome": "X"
+        },
+        "direita": {
+          "tipo": "carregar_memoria",
+          "nome": "Y"
+        }
+      },
+      "bloco_then": [
+        {
+          "tipo": "expressao",
+          "linha": 36,
+          "fonte": "(1 RLE)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "RLE",
+            "valor": {
+              "tipo": "numero",
+              "valor": "1"
+            }
+          }
+        }
+      ],
+      "bloco_else": [
+        {
+          "tipo": "expressao",
+          "linha": 38,
+          "fonte": "(0 RLE)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "RLE",
+            "valor": {
+              "tipo": "numero",
+              "valor": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "if",
+      "linha": 40,
+      "fonte": "((X) (Y) == IF)",
+      "condicao": {
+        "tipo": "relacional",
+        "operador": "==",
+        "esquerda": {
+          "tipo": "carregar_memoria",
+          "nome": "X"
+        },
+        "direita": {
+          "tipo": "carregar_memoria",
+          "nome": "Y"
+        }
+      },
+      "bloco_then": [
+        {
+          "tipo": "expressao",
+          "linha": 41,
+          "fonte": "(1 REQ)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "REQ",
+            "valor": {
+              "tipo": "numero",
+              "valor": "1"
+            }
+          }
+        }
+      ],
+      "bloco_else": [
+        {
+          "tipo": "expressao",
+          "linha": 43,
+          "fonte": "(0 REQ)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "REQ",
+            "valor": {
+              "tipo": "numero",
+              "valor": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "if",
+      "linha": 45,
+      "fonte": "((X) (Y) != IF)",
+      "condicao": {
+        "tipo": "relacional",
+        "operador": "!=",
+        "esquerda": {
+          "tipo": "carregar_memoria",
+          "nome": "X"
+        },
+        "direita": {
+          "tipo": "carregar_memoria",
+          "nome": "Y"
+        }
+      },
+      "bloco_then": [
+        {
+          "tipo": "expressao",
+          "linha": 46,
+          "fonte": "(1 RNE)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "RNE",
+            "valor": {
+              "tipo": "numero",
+              "valor": "1"
+            }
+          }
+        }
+      ],
+      "bloco_else": [
+        {
+          "tipo": "expressao",
+          "linha": 48,
+          "fonte": "(0 RNE)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "RNE",
+            "valor": {
+              "tipo": "numero",
+              "valor": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "while",
+      "linha": 51,
+      "fonte": "((Y) 0 > WHILE)",
+      "condicao": {
+        "tipo": "relacional",
+        "operador": ">",
+        "esquerda": {
+          "tipo": "carregar_memoria",
+          "nome": "Y"
+        },
+        "direita": {
+          "tipo": "numero",
+          "valor": "0"
+        }
+      },
+      "bloco": [
+        {
+          "tipo": "expressao",
+          "linha": 52,
+          "fonte": "(((Y) 1 -) Y)",
+          "estrutura": {
+            "tipo": "gravar_memoria",
+            "nome": "Y",
+            "valor": {
+              "tipo": "binaria",
+              "operador": "-",
+              "esquerda": {
+                "tipo": "carregar_memoria",
+                "nome": "Y"
+              },
+              "direita": {
+                "tipo": "numero",
+                "valor": "1"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "expressao",
+      "linha": 55,
+      "fonte": "(1 RES)",
+      "estrutura": {
+        "tipo": "carregar_resultado",
+        "indice": "1"
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 56,
+      "fonte": "((1 RES) ULTIMO)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "ULTIMO",
+        "valor": {
+          "tipo": "carregar_resultado",
+          "indice": "1"
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 57,
+      "fonte": "(SOMA)",
+      "estrutura": {
+        "tipo": "carregar_memoria",
+        "nome": "SOMA"
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 59,
+      "fonte": "(TRUE LIGADO)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "LIGADO",
+        "valor": {
+          "tipo": "bool_literal",
+          "valor": "TRUE"
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 60,
+      "fonte": "(FALSE DESLIGADO)",
+      "estrutura": {
+        "tipo": "gravar_memoria",
+        "nome": "DESLIGADO",
+        "valor": {
+          "tipo": "bool_literal",
+          "valor": "FALSE"
+        }
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 61,
+      "fonte": "(LIGADO)",
+      "estrutura": {
+        "tipo": "carregar_memoria",
+        "nome": "LIGADO"
+      }
+    },
+    {
+      "tipo": "expressao",
+      "linha": 62,
+      "fonte": "(DESLIGADO)",
+      "estrutura": {
+        "tipo": "carregar_memoria",
+        "nome": "DESLIGADO"
+      }
+    }
+  ]
+}

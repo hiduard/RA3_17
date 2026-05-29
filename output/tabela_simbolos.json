@@ -1,0 +1,107 @@
+{
+  "X": {
+    "tipo": "int",
+    "linha_definicao": 3,
+    "linha_ultimo_uso": 45
+  },
+  "Y": {
+    "tipo": "int",
+    "linha_definicao": 4,
+    "linha_ultimo_uso": 52
+  },
+  "Z": {
+    "tipo": "real",
+    "linha_definicao": 5,
+    "linha_ultimo_uso": 18
+  },
+  "SOMA": {
+    "tipo": "int",
+    "linha_definicao": 7,
+    "linha_ultimo_uso": 57
+  },
+  "DIF": {
+    "tipo": "int",
+    "linha_definicao": 8,
+    "linha_ultimo_uso": 8
+  },
+  "PROD": {
+    "tipo": "int",
+    "linha_definicao": 9,
+    "linha_ultimo_uso": 9
+  },
+  "DIVINT": {
+    "tipo": "int",
+    "linha_definicao": 10,
+    "linha_ultimo_uso": 10
+  },
+  "RESTO": {
+    "tipo": "int",
+    "linha_definicao": 11,
+    "linha_ultimo_uso": 11
+  },
+  "ZSOMA": {
+    "tipo": "real",
+    "linha_definicao": 13,
+    "linha_ultimo_uso": 13
+  },
+  "ZDIV": {
+    "tipo": "real",
+    "linha_definicao": 14,
+    "linha_ultimo_uso": 14
+  },
+  "POT": {
+    "tipo": "int",
+    "linha_definicao": 16,
+    "linha_ultimo_uso": 16
+  },
+  "MIX": {
+    "tipo": "real",
+    "linha_definicao": 18,
+    "linha_ultimo_uso": 18
+  },
+  "RGT": {
+    "tipo": "int",
+    "linha_definicao": 21,
+    "linha_ultimo_uso": 23
+  },
+  "RLT": {
+    "tipo": "int",
+    "linha_definicao": 26,
+    "linha_ultimo_uso": 28
+  },
+  "RGE": {
+    "tipo": "int",
+    "linha_definicao": 31,
+    "linha_ultimo_uso": 33
+  },
+  "RLE": {
+    "tipo": "int",
+    "linha_definicao": 36,
+    "linha_ultimo_uso": 38
+  },
+  "REQ": {
+    "tipo": "int",
+    "linha_definicao": 41,
+    "linha_ultimo_uso": 43
+  },
+  "RNE": {
+    "tipo": "int",
+    "linha_definicao": 46,
+    "linha_ultimo_uso": 48
+  },
+  "ULTIMO": {
+    "tipo": "int",
+    "linha_definicao": 56,
+    "linha_ultimo_uso": 56
+  },
+  "LIGADO": {
+    "tipo": "bool",
+    "linha_definicao": 59,
+    "linha_ultimo_uso": 61
+  },
+  "DESLIGADO": {
+    "tipo": "bool",
+    "linha_definicao": 60,
+    "linha_ultimo_uso": 62
+  }
+}

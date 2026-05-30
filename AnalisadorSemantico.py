@@ -1,7 +1,7 @@
 # Eduardo Hideo Itinoseke Ogassawara - hiduard
 # Gabriel Barbosa Fernandes de Oliveira - GabrielBarbosaFernandes
 #
-# Nome do grupo no Canvas: RA3 17
+# Nome do grupo no Canvas: RA3_8
 
 import sys
 import json
@@ -168,7 +168,7 @@ def main():
         return
 
     _separador()
-    print(f"  AnalisadorSemantico — Grupo RA2 17")
+    print(f"  AnalisadorSemantico — Grupo RA3 8")
     print(f"  Arquivo: {nome_arquivo}")
     _separador()
 

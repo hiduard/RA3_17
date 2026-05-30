@@ -2,7 +2,7 @@
 # Eduardo Hideo Itinoseke Ogassawara - hiduard
 # Gabriel Barbosa Fernandes de Oliveira - GabrielBarbosaFernandes
 #
-# Nome do grupo no Canvas: RA3 17
+# Nome do grupo no Canvas: RA3 8
 
 import subprocess
 import sys
@@ -52,7 +52,7 @@ def main():
     sucessos = 0
 
     _sep()
-    print("  Suite de Testes — Analisador Semantico  |  Grupo RA2 17")
+    print("  Suite de Testes — Analisador Semantico  |  Grupo RA3 8 ")
     _sep()
 
     print()

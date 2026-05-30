@@ -6,7 +6,7 @@
 - **Ano / Semestre**: 2026 — 1º Semestre
 - **Disciplina**: Linguagens Formais e Compiladores
 - **Professor**: Frank Coelho de Alcantara
-- **Grupo (Canvas)**: RA3 17
+- **Grupo (Canvas)**: RA3 8
 - **Linguagem de implementação**: Python 3
 
 ### Integrantes (ordem alfabética)
@@ -50,7 +50,7 @@ python rodar_todos_testes.py
 
 ```
 ============================================================
-  AnalisadorSemantico — Grupo RA3 17
+  AnalisadorSemantico — Grupo RA3 8
   Arquivo: teste1.txt
 ============================================================
 ================= ETAPA 1: ANALISE LEXICA =================

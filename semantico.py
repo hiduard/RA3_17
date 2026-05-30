@@ -2,7 +2,7 @@
 # Eduardo Hideo Itinoseke Ogassawara - hiduard
 # Gabriel Barbosa Fernandes de Oliveira - GabrielBarbosaFernandes
 #
-# Nome do grupo no Canvas: RA2 17
+# Nome do grupo no Canvas: RA3 8
 
 # =============================================================================
 # semantico.py
@@ -1081,7 +1081,7 @@ def salvarGramaticaAumentadaMarkdown(caminho):
     linhas = []
     linhas.append("# Gramatica Atribuida — EBNF")
     linhas.append("")
-    linhas.append("Gramatica da linguagem RPN — Grupo RA2 17 (Fases 1-3).")
+    linhas.append("Gramatica da linguagem RPN — Grupo RA3 8 (Fases 1-3).")
     linhas.append("")
     linhas.append("**Convencao EBNF:**")
     linhas.append("- `nao-terminais` em minusculas")

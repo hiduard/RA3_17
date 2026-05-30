@@ -2,7 +2,7 @@
 # Eduardo Hideo Itinoseke Ogassawara - hiduard
 # Gabriel Barbosa Fernandes de Oliveira - GabrielBarbosaFernandes
 #
-# Nome do grupo no Canvas: RA3 17
+# Nome do grupo no Canvas: RA3 8
 
 def gerarRotuloConstante(valor):
     rotulo = valor.replace("-", "NEG_").replace(".", "_")
